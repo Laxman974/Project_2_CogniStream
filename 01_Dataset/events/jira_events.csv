@@ -1,0 +1,501 @@
+event_id,timestamp,developer_id,issue_key,issue_type,status,priority,event_type
+JR0299,2026-08-01 09:54:00,DEV007,COGNI-935,Improvement,Code Review,Critical,issue_updated
+JR0189,2026-08-01 10:04:00,DEV009,COGNI-210,Improvement,To Do,Low,issue_created
+JR0405,2026-08-01 10:38:00,DEV004,DEVOPS-915,Story,To Do,Critical,status_changed
+JR0153,2026-08-01 11:21:00,DEV001,COGNI-548,Story,Code Review,High,issue_updated
+JR0035,2026-08-01 11:28:00,DEV004,DEVOPS-408,Task,In Progress,Medium,issue_assigned
+JR0474,2026-08-01 14:25:00,DEV004,COGNI-723,Improvement,Testing,Low,status_changed
+JR0313,2026-08-01 14:55:00,DEV010,DATA-913,Story,Done,Medium,issue_updated
+JR0362,2026-08-01 15:39:00,DEV009,COGNI-887,Bug,To Do,Low,status_changed
+JR0420,2026-08-01 16:20:00,DEV007,DATA-784,Story,Done,Low,issue_created
+JR0047,2026-08-01 16:36:00,DEV008,DATA-240,Task,Testing,Medium,status_changed
+JR0010,2026-08-01 16:58:00,DEV010,DEVOPS-762,Story,Code Review,Medium,comment_added
+JR0078,2026-08-01 18:11:00,DEV005,COGNI-767,Improvement,To Do,High,issue_assigned
+JR0070,2026-08-01 18:21:00,DEV001,COGNI-224,Improvement,Code Review,Critical,issue_updated
+JR0107,2026-08-01 18:30:00,DEV008,DATA-630,Bug,Code Review,High,status_changed
+JR0040,2026-08-01 19:03:00,DEV009,DEVOPS-671,Story,Testing,Low,issue_updated
+JR0339,2026-08-01 19:50:00,DEV005,COGNI-648,Improvement,In Progress,Critical,issue_assigned
+JR0186,2026-08-01 20:09:00,DEV005,DEVOPS-174,Bug,Done,High,status_changed
+JR0064,2026-08-01 20:16:00,DEV003,DATA-844,Improvement,Code Review,Critical,issue_created
+JR0202,2026-08-01 21:15:00,DEV010,DATA-907,Improvement,To Do,High,comment_added
+JR0183,2026-08-01 22:00:00,DEV009,DATA-348,Bug,Testing,Critical,issue_updated
+JR0344,2026-08-02 00:41:00,DEV002,DEVOPS-965,Task,Done,Medium,issue_created
+JR0424,2026-08-02 02:56:00,DEV008,COGNI-527,Story,Done,High,issue_assigned
+JR0206,2026-08-02 02:59:00,DEV004,DEVOPS-852,Bug,In Progress,Medium,issue_created
+JR0019,2026-08-02 03:55:00,DEV004,DEVOPS-599,Task,Done,High,comment_added
+JR0085,2026-08-02 04:12:00,DEV009,COGNI-405,Story,To Do,Critical,comment_added
+JR0176,2026-08-02 04:51:00,DEV001,DEVOPS-254,Bug,Done,High,comment_added
+JR0082,2026-08-02 04:59:00,DEV004,COGNI-394,Improvement,Done,High,status_changed
+JR0076,2026-08-02 05:59:00,DEV007,COGNI-865,Task,Testing,Medium,issue_created
+JR0123,2026-08-02 07:15:00,DEV001,DATA-806,Bug,Done,Low,issue_assigned
+JR0384,2026-08-02 07:15:00,DEV010,COGNI-629,Improvement,Done,Medium,issue_created
+JR0050,2026-08-02 07:57:00,DEV008,DATA-830,Task,Code Review,High,status_changed
+JR0103,2026-08-02 08:27:00,DEV001,COGNI-588,Bug,Done,Critical,issue_updated
+JR0401,2026-08-02 08:52:00,DEV008,DEVOPS-764,Bug,Done,Medium,status_changed
+JR0330,2026-08-02 10:26:00,DEV007,COGNI-153,Task,Testing,High,status_changed
+JR0410,2026-08-02 10:58:00,DEV004,COGNI-403,Bug,Done,Low,issue_assigned
+JR0012,2026-08-02 11:12:00,DEV010,DATA-225,Bug,In Progress,Low,issue_updated
+JR0038,2026-08-02 11:30:00,DEV002,DATA-492,Task,In Progress,Critical,issue_assigned
+JR0467,2026-08-02 11:41:00,DEV007,DATA-287,Story,Testing,Critical,status_changed
+JR0442,2026-08-02 11:43:00,DEV001,COGNI-168,Task,Done,Low,issue_assigned
+JR0007,2026-08-02 11:52:00,DEV001,DEVOPS-936,Improvement,To Do,High,issue_assigned
+JR0308,2026-08-02 12:21:00,DEV001,DEVOPS-422,Improvement,Testing,Low,issue_created
+JR0335,2026-08-02 13:54:00,DEV006,DATA-992,Task,Testing,Low,comment_added
+JR0436,2026-08-02 14:30:00,DEV006,COGNI-888,Improvement,In Progress,Critical,issue_assigned
+JR0124,2026-08-02 14:43:00,DEV005,COGNI-623,Story,Code Review,High,status_changed
+JR0417,2026-08-02 16:48:00,DEV001,COGNI-714,Bug,Code Review,Low,issue_assigned
+JR0221,2026-08-02 17:50:00,DEV005,DATA-249,Bug,Done,Medium,issue_assigned
+JR0296,2026-08-02 18:00:00,DEV009,DEVOPS-865,Bug,To Do,High,issue_assigned
+JR0433,2026-08-02 18:08:00,DEV010,COGNI-859,Story,Testing,Low,issue_created
+JR0039,2026-08-02 18:50:00,DEV004,DEVOPS-127,Story,To Do,Low,issue_created
+JR0148,2026-08-02 18:52:00,DEV009,DEVOPS-142,Story,To Do,Medium,issue_created
+JR0292,2026-08-02 19:53:00,DEV007,COGNI-715,Improvement,In Progress,High,issue_updated
+JR0341,2026-08-02 21:39:00,DEV002,DEVOPS-252,Task,Code Review,Medium,issue_assigned
+JR0121,2026-08-02 22:46:00,DEV001,DATA-840,Bug,Testing,Low,issue_created
+JR0329,2026-08-02 23:14:00,DEV004,DATA-525,Improvement,In Progress,Medium,status_changed
+JR0198,2026-08-03 00:27:00,DEV004,DATA-193,Task,In Progress,Critical,issue_created
+JR0267,2026-08-03 00:39:00,DEV001,DEVOPS-545,Story,In Progress,High,comment_added
+JR0255,2026-08-03 02:32:00,DEV006,DATA-935,Improvement,To Do,Medium,status_changed
+JR0363,2026-08-03 04:16:00,DEV007,COGNI-353,Story,In Progress,Low,issue_created
+JR0204,2026-08-03 04:45:00,DEV005,COGNI-361,Story,In Progress,High,comment_added
+JR0389,2026-08-03 04:51:00,DEV009,COGNI-540,Story,Code Review,Critical,issue_updated
+JR0485,2026-08-03 05:20:00,DEV001,COGNI-752,Bug,In Progress,High,comment_added
+JR0052,2026-08-03 06:14:00,DEV004,DATA-416,Bug,Done,Medium,issue_assigned
+JR0455,2026-08-03 06:19:00,DEV002,COGNI-287,Improvement,To Do,High,issue_updated
+JR0126,2026-08-03 06:39:00,DEV005,DEVOPS-503,Task,Done,Critical,comment_added
+JR0413,2026-08-03 06:55:00,DEV006,DATA-306,Story,Done,Critical,issue_created
+JR0138,2026-08-03 07:08:00,DEV002,DEVOPS-294,Bug,In Progress,Medium,status_changed
+JR0408,2026-08-03 07:47:00,DEV008,DATA-198,Task,In Progress,Medium,issue_updated
+JR0062,2026-08-03 07:54:00,DEV005,COGNI-520,Bug,To Do,Critical,comment_added
+JR0337,2026-08-03 08:23:00,DEV009,DATA-996,Bug,To Do,Low,issue_updated
+JR0464,2026-08-03 08:25:00,DEV006,DEVOPS-215,Improvement,Testing,High,comment_added
+JR0318,2026-08-03 09:37:00,DEV001,DATA-560,Story,In Progress,Low,issue_created
+JR0432,2026-08-03 10:28:00,DEV005,DATA-636,Improvement,In Progress,High,comment_added
+JR0279,2026-08-03 10:35:00,DEV003,DEVOPS-289,Task,Testing,High,issue_assigned
+JR0068,2026-08-03 10:39:00,DEV001,COGNI-229,Bug,Code Review,Low,comment_added
+JR0236,2026-08-03 12:17:00,DEV001,DEVOPS-513,Story,Code Review,Medium,issue_assigned
+JR0456,2026-08-03 12:25:00,DEV002,DATA-662,Task,Testing,Critical,issue_updated
+JR0441,2026-08-03 12:52:00,DEV007,COGNI-612,Bug,To Do,High,status_changed
+JR0045,2026-08-03 13:15:00,DEV005,DATA-385,Bug,Done,High,issue_created
+JR0006,2026-08-03 13:19:00,DEV008,DATA-295,Bug,In Progress,High,status_changed
+JR0249,2026-08-03 13:46:00,DEV010,DATA-163,Task,In Progress,High,issue_created
+JR0271,2026-08-03 14:31:00,DEV006,DATA-824,Task,Done,Low,issue_updated
+JR0257,2026-08-03 14:38:00,DEV002,DATA-344,Bug,Done,Medium,comment_added
+JR0205,2026-08-03 16:56:00,DEV001,DATA-951,Improvement,Testing,Low,status_changed
+JR0060,2026-08-03 16:57:00,DEV008,DEVOPS-362,Bug,Code Review,Low,issue_created
+JR0477,2026-08-03 17:13:00,DEV003,COGNI-191,Task,Code Review,Low,issue_assigned
+JR0310,2026-08-03 18:27:00,DEV002,DEVOPS-188,Story,Testing,Medium,comment_added
+JR0287,2026-08-03 19:10:00,DEV003,DEVOPS-387,Task,In Progress,Low,issue_updated
+JR0118,2026-08-03 19:33:00,DEV010,DATA-571,Story,Done,Low,issue_assigned
+JR0256,2026-08-03 19:46:00,DEV008,DEVOPS-987,Story,Code Review,Low,issue_created
+JR0374,2026-08-03 19:52:00,DEV003,DEVOPS-838,Story,Code Review,Medium,issue_created
+JR0314,2026-08-03 20:56:00,DEV005,COGNI-738,Bug,In Progress,Critical,issue_updated
+JR0094,2026-08-03 21:16:00,DEV006,DATA-880,Improvement,Testing,High,issue_created
+JR0459,2026-08-03 21:53:00,DEV005,COGNI-307,Bug,Done,Medium,issue_created
+JR0011,2026-08-03 21:54:00,DEV006,DATA-215,Bug,Done,Low,comment_added
+JR0284,2026-08-03 22:22:00,DEV008,COGNI-647,Bug,To Do,Low,issue_updated
+JR0021,2026-08-03 22:38:00,DEV006,DATA-608,Bug,To Do,Low,comment_added
+JR0080,2026-08-03 23:00:00,DEV005,DATA-849,Task,In Progress,Medium,issue_created
+JR0300,2026-08-04 00:06:00,DEV005,DATA-107,Task,Testing,Medium,comment_added
+JR0239,2026-08-04 00:22:00,DEV010,COGNI-736,Task,To Do,Low,status_changed
+JR0164,2026-08-04 00:26:00,DEV006,COGNI-638,Story,Done,Medium,issue_updated
+JR0106,2026-08-04 00:30:00,DEV007,DATA-127,Story,In Progress,Critical,issue_updated
+JR0364,2026-08-04 01:27:00,DEV004,DATA-628,Task,Done,Medium,issue_created
+JR0495,2026-08-04 02:57:00,DEV001,DEVOPS-393,Bug,In Progress,Low,issue_updated
+JR0461,2026-08-04 03:05:00,DEV001,DEVOPS-797,Improvement,To Do,Critical,issue_assigned
+JR0168,2026-08-04 04:13:00,DEV005,DEVOPS-439,Bug,Done,Low,issue_updated
+JR0350,2026-08-04 04:52:00,DEV001,DEVOPS-170,Story,Code Review,Low,comment_added
+JR0305,2026-08-04 05:40:00,DEV002,COGNI-447,Story,In Progress,High,issue_updated
+JR0024,2026-08-04 07:38:00,DEV003,COGNI-656,Task,To Do,Low,issue_created
+JR0334,2026-08-04 08:37:00,DEV008,COGNI-559,Bug,To Do,Medium,issue_updated
+JR0017,2026-08-04 08:55:00,DEV003,DEVOPS-235,Task,Testing,Critical,issue_assigned
+JR0264,2026-08-04 09:06:00,DEV005,COGNI-746,Improvement,Code Review,Critical,issue_updated
+JR0443,2026-08-04 09:43:00,DEV010,COGNI-516,Story,Testing,Medium,comment_added
+JR0315,2026-08-04 10:07:00,DEV006,COGNI-802,Improvement,In Progress,Critical,status_changed
+JR0020,2026-08-04 13:13:00,DEV008,DATA-234,Bug,Done,High,issue_updated
+JR0291,2026-08-04 13:23:00,DEV003,DATA-875,Task,In Progress,Low,comment_added
+JR0359,2026-08-04 13:52:00,DEV001,DATA-330,Task,In Progress,Medium,issue_assigned
+JR0240,2026-08-04 14:00:00,DEV004,DATA-270,Story,Testing,Low,issue_updated
+JR0387,2026-08-04 14:51:00,DEV002,DEVOPS-700,Task,In Progress,Critical,issue_created
+JR0275,2026-08-04 14:56:00,DEV001,DEVOPS-933,Improvement,To Do,Critical,status_changed
+JR0307,2026-08-04 17:26:00,DEV001,DEVOPS-118,Task,In Progress,Critical,comment_added
+JR0023,2026-08-04 17:36:00,DEV001,DATA-418,Task,Done,Medium,issue_updated
+JR0377,2026-08-04 17:49:00,DEV007,DATA-129,Improvement,Code Review,High,issue_created
+JR0496,2026-08-04 18:08:00,DEV007,DEVOPS-845,Story,In Progress,Critical,status_changed
+JR0219,2026-08-04 18:18:00,DEV009,DEVOPS-527,Bug,Testing,Low,status_changed
+JR0437,2026-08-04 19:26:00,DEV001,COGNI-359,Improvement,Done,Medium,issue_assigned
+JR0321,2026-08-04 19:41:00,DEV008,COGNI-777,Bug,In Progress,Medium,status_changed
+JR0234,2026-08-04 19:59:00,DEV007,COGNI-867,Improvement,Code Review,Critical,issue_updated
+JR0175,2026-08-04 22:39:00,DEV001,DATA-834,Improvement,Testing,High,comment_added
+JR0215,2026-08-04 22:45:00,DEV005,DATA-231,Story,In Progress,Low,issue_updated
+JR0053,2026-08-04 23:03:00,DEV005,COGNI-122,Task,Testing,Critical,issue_updated
+JR0397,2026-08-04 23:37:00,DEV002,DATA-378,Story,Testing,High,status_changed
+JR0058,2026-08-05 00:24:00,DEV001,COGNI-365,Improvement,Testing,Low,issue_assigned
+JR0212,2026-08-05 00:37:00,DEV005,DATA-737,Bug,Done,Critical,status_changed
+JR0026,2026-08-05 01:18:00,DEV010,DEVOPS-168,Story,Done,High,issue_updated
+JR0266,2026-08-05 02:44:00,DEV006,DEVOPS-641,Story,Code Review,Critical,issue_assigned
+JR0358,2026-08-05 03:17:00,DEV006,COGNI-622,Task,In Progress,Low,issue_updated
+JR0399,2026-08-05 03:19:00,DEV008,DATA-519,Task,Done,Low,issue_updated
+JR0028,2026-08-05 03:33:00,DEV002,COGNI-675,Task,In Progress,Critical,issue_assigned
+JR0418,2026-08-05 04:11:00,DEV005,COGNI-344,Task,In Progress,Critical,comment_added
+JR0127,2026-08-05 04:19:00,DEV002,DATA-276,Task,Code Review,Critical,issue_assigned
+JR0115,2026-08-05 05:18:00,DEV010,DATA-699,Task,Done,Low,status_changed
+JR0074,2026-08-05 05:22:00,DEV006,COGNI-445,Story,To Do,Medium,issue_created
+JR0160,2026-08-05 05:22:00,DEV008,COGNI-541,Bug,Testing,Medium,status_changed
+JR0093,2026-08-05 05:24:00,DEV005,DATA-734,Improvement,Code Review,Medium,status_changed
+JR0306,2026-08-05 05:51:00,DEV002,COGNI-252,Bug,Code Review,Medium,issue_assigned
+JR0412,2026-08-05 05:54:00,DEV004,COGNI-747,Task,Testing,Low,issue_updated
+JR0207,2026-08-05 06:18:00,DEV010,COGNI-276,Improvement,To Do,High,comment_added
+JR0407,2026-08-05 06:35:00,DEV004,DEVOPS-830,Story,Code Review,Critical,issue_updated
+JR0112,2026-08-05 07:10:00,DEV005,DATA-863,Task,Code Review,Low,issue_created
+JR0440,2026-08-05 07:12:00,DEV009,DATA-222,Story,Code Review,Medium,issue_updated
+JR0421,2026-08-05 08:25:00,DEV007,COGNI-611,Improvement,Done,Critical,issue_created
+JR0092,2026-08-05 08:38:00,DEV006,COGNI-592,Story,To Do,Low,issue_created
+JR0428,2026-08-05 09:45:00,DEV006,COGNI-795,Task,Testing,Critical,issue_assigned
+JR0061,2026-08-05 10:09:00,DEV006,DATA-978,Improvement,Code Review,Critical,issue_updated
+JR0403,2026-08-05 10:38:00,DEV009,DATA-247,Improvement,Testing,High,comment_added
+JR0471,2026-08-05 11:22:00,DEV008,DATA-989,Improvement,In Progress,Low,issue_created
+JR0278,2026-08-05 13:06:00,DEV004,DATA-879,Story,In Progress,Medium,issue_updated
+JR0136,2026-08-05 14:15:00,DEV008,DEVOPS-720,Story,Code Review,Low,issue_assigned
+JR0210,2026-08-05 14:49:00,DEV002,DATA-357,Improvement,In Progress,Low,issue_updated
+JR0323,2026-08-05 14:53:00,DEV001,DEVOPS-204,Story,Testing,High,issue_updated
+JR0332,2026-08-05 15:46:00,DEV004,DEVOPS-294,Task,In Progress,High,issue_assigned
+JR0289,2026-08-05 15:52:00,DEV009,COGNI-582,Task,Done,Medium,status_changed
+JR0213,2026-08-05 16:14:00,DEV003,COGNI-107,Bug,Code Review,Low,issue_created
+JR0342,2026-08-05 16:19:00,DEV010,DEVOPS-996,Story,Done,Medium,issue_assigned
+JR0226,2026-08-05 16:45:00,DEV008,DEVOPS-485,Task,Code Review,High,issue_created
+JR0131,2026-08-05 17:10:00,DEV009,DEVOPS-301,Improvement,To Do,High,issue_updated
+JR0250,2026-08-05 17:30:00,DEV001,DATA-577,Improvement,Testing,Critical,issue_created
+JR0369,2026-08-05 17:35:00,DEV001,DEVOPS-707,Task,Done,High,issue_updated
+JR0048,2026-08-05 18:07:00,DEV010,DATA-537,Story,Testing,High,issue_created
+JR0338,2026-08-05 18:32:00,DEV003,DEVOPS-825,Story,Done,Low,issue_assigned
+JR0325,2026-08-05 18:58:00,DEV003,DATA-670,Bug,Testing,High,status_changed
+JR0179,2026-08-05 19:36:00,DEV002,COGNI-343,Bug,To Do,Medium,issue_updated
+JR0295,2026-08-05 19:36:00,DEV010,COGNI-245,Improvement,Testing,High,status_changed
+JR0209,2026-08-05 19:44:00,DEV002,DATA-125,Bug,Code Review,Low,issue_updated
+JR0258,2026-08-05 21:54:00,DEV005,DATA-841,Improvement,Done,Low,issue_created
+JR0404,2026-08-05 21:54:00,DEV007,DATA-808,Bug,Testing,Low,issue_created
+JR0345,2026-08-05 22:06:00,DEV004,COGNI-850,Task,Code Review,High,issue_assigned
+JR0476,2026-08-05 22:29:00,DEV010,DEVOPS-435,Improvement,Testing,Critical,issue_created
+JR0301,2026-08-05 22:30:00,DEV010,COGNI-169,Bug,Code Review,Medium,status_changed
+JR0274,2026-08-05 23:16:00,DEV006,DEVOPS-906,Bug,Code Review,Medium,comment_added
+JR0140,2026-08-05 23:49:00,DEV010,COGNI-864,Task,Testing,High,issue_created
+JR0113,2026-08-06 00:08:00,DEV003,DATA-109,Improvement,Done,Medium,issue_created
+JR0157,2026-08-06 00:36:00,DEV002,COGNI-590,Task,Code Review,Critical,status_changed
+JR0114,2026-08-06 00:45:00,DEV008,COGNI-181,Improvement,Code Review,Low,issue_created
+JR0223,2026-08-06 01:29:00,DEV002,COGNI-270,Improvement,Code Review,Critical,status_changed
+JR0199,2026-08-06 01:34:00,DEV001,DEVOPS-395,Improvement,Testing,Low,issue_assigned
+JR0071,2026-08-06 01:39:00,DEV006,DATA-233,Task,Testing,Low,issue_created
+JR0089,2026-08-06 02:10:00,DEV003,COGNI-246,Improvement,To Do,Critical,issue_created
+JR0409,2026-08-06 03:00:00,DEV010,COGNI-449,Story,Testing,Medium,comment_added
+JR0228,2026-08-06 03:22:00,DEV008,DATA-727,Improvement,Done,Low,issue_created
+JR0316,2026-08-06 04:36:00,DEV007,DATA-262,Bug,Done,Critical,comment_added
+JR0263,2026-08-06 05:27:00,DEV001,DATA-744,Improvement,Code Review,Medium,issue_assigned
+JR0468,2026-08-06 06:27:00,DEV003,COGNI-278,Bug,To Do,High,issue_assigned
+JR0489,2026-08-06 06:52:00,DEV001,DATA-760,Story,Testing,Medium,issue_updated
+JR0283,2026-08-06 07:59:00,DEV003,DATA-350,Improvement,Code Review,Medium,status_changed
+JR0181,2026-08-06 08:05:00,DEV001,DATA-994,Story,To Do,Low,issue_updated
+JR0084,2026-08-06 08:51:00,DEV008,COGNI-730,Story,In Progress,Low,status_changed
+JR0185,2026-08-06 08:51:00,DEV005,DEVOPS-588,Story,To Do,High,comment_added
+JR0200,2026-08-06 09:58:00,DEV008,DEVOPS-281,Improvement,Testing,Medium,issue_assigned
+JR0162,2026-08-06 10:47:00,DEV010,DEVOPS-763,Task,Code Review,High,issue_updated
+JR0110,2026-08-06 11:17:00,DEV005,COGNI-605,Task,Testing,Critical,issue_created
+JR0033,2026-08-06 11:53:00,DEV008,DEVOPS-893,Bug,Code Review,Low,issue_assigned
+JR0034,2026-08-06 11:53:00,DEV007,DATA-413,Task,Code Review,Critical,issue_created
+JR0354,2026-08-06 12:46:00,DEV003,DATA-981,Story,Done,Critical,issue_assigned
+JR0155,2026-08-06 12:51:00,DEV007,COGNI-531,Story,To Do,Medium,issue_assigned
+JR0454,2026-08-06 16:23:00,DEV005,DEVOPS-304,Bug,To Do,Medium,comment_added
+JR0079,2026-08-06 16:43:00,DEV003,COGNI-394,Improvement,Done,Low,status_changed
+JR0491,2026-08-06 16:54:00,DEV007,DATA-896,Story,In Progress,Low,issue_assigned
+JR0158,2026-08-06 17:22:00,DEV001,DATA-667,Story,To Do,Critical,issue_assigned
+JR0083,2026-08-06 18:22:00,DEV003,DATA-735,Task,Code Review,Medium,comment_added
+JR0177,2026-08-06 19:08:00,DEV001,DEVOPS-321,Task,In Progress,Low,comment_added
+JR0285,2026-08-06 19:46:00,DEV005,DATA-458,Task,In Progress,Critical,comment_added
+JR0481,2026-08-06 20:44:00,DEV009,DATA-289,Story,Code Review,Critical,comment_added
+JR0247,2026-08-06 21:11:00,DEV009,DEVOPS-809,Improvement,In Progress,Low,issue_updated
+JR0343,2026-08-06 22:47:00,DEV003,DATA-184,Improvement,Testing,Low,issue_created
+JR0392,2026-08-07 00:47:00,DEV002,DATA-489,Bug,In Progress,Critical,comment_added
+JR0251,2026-08-07 01:22:00,DEV005,COGNI-215,Task,Code Review,Low,status_changed
+JR0259,2026-08-07 02:18:00,DEV008,DATA-777,Improvement,To Do,High,issue_created
+JR0229,2026-08-07 02:24:00,DEV009,DEVOPS-398,Story,To Do,Medium,comment_added
+JR0232,2026-08-07 02:31:00,DEV005,DEVOPS-282,Task,In Progress,High,issue_created
+JR0244,2026-08-07 02:59:00,DEV007,COGNI-394,Bug,To Do,High,issue_updated
+JR0416,2026-08-07 03:35:00,DEV006,DEVOPS-489,Task,To Do,Medium,status_changed
+JR0304,2026-08-07 04:05:00,DEV007,DATA-704,Bug,Code Review,Low,status_changed
+JR0286,2026-08-07 04:29:00,DEV001,DEVOPS-965,Task,Done,Critical,issue_assigned
+JR0117,2026-08-07 06:41:00,DEV008,DEVOPS-239,Story,Testing,High,issue_created
+JR0376,2026-08-07 07:00:00,DEV001,DEVOPS-154,Improvement,Done,Medium,status_changed
+JR0149,2026-08-07 08:11:00,DEV005,DATA-582,Improvement,To Do,Medium,issue_assigned
+JR0378,2026-08-07 09:00:00,DEV007,DATA-183,Bug,Done,Critical,issue_assigned
+JR0161,2026-08-07 09:30:00,DEV004,DEVOPS-777,Improvement,Testing,High,comment_added
+JR0381,2026-08-07 09:59:00,DEV009,DATA-714,Task,Done,Critical,issue_updated
+JR0351,2026-08-07 11:54:00,DEV010,DATA-175,Improvement,Done,Medium,issue_created
+JR0102,2026-08-07 12:10:00,DEV004,DEVOPS-535,Bug,Code Review,Low,issue_updated
+JR0385,2026-08-07 12:14:00,DEV009,DEVOPS-145,Bug,Done,Medium,comment_added
+JR0319,2026-08-07 12:23:00,DEV009,DEVOPS-212,Task,Code Review,High,issue_created
+JR0235,2026-08-07 13:10:00,DEV010,DEVOPS-130,Task,To Do,Critical,comment_added
+JR0446,2026-08-07 18:16:00,DEV003,COGNI-741,Task,Done,Low,status_changed
+JR0004,2026-08-07 19:24:00,DEV010,COGNI-214,Task,Done,Low,issue_assigned
+JR0368,2026-08-07 19:54:00,DEV004,DATA-909,Improvement,Testing,Low,issue_created
+JR0195,2026-08-07 20:11:00,DEV009,DATA-726,Story,Code Review,Low,issue_updated
+JR0458,2026-08-07 20:18:00,DEV010,DATA-384,Story,Code Review,Medium,issue_created
+JR0156,2026-08-07 21:10:00,DEV001,COGNI-369,Story,Done,High,issue_updated
+JR0051,2026-08-07 22:29:00,DEV010,DEVOPS-643,Bug,Testing,Low,issue_updated
+JR0027,2026-08-07 22:40:00,DEV001,COGNI-914,Bug,To Do,Medium,issue_created
+JR0493,2026-08-07 22:44:00,DEV006,COGNI-106,Bug,To Do,Low,issue_assigned
+JR0336,2026-08-07 22:53:00,DEV004,DATA-210,Story,Testing,Medium,issue_created
+JR0002,2026-08-07 23:08:00,DEV001,COGNI-219,Task,To Do,Medium,issue_updated
+JR0434,2026-08-07 23:22:00,DEV009,COGNI-669,Improvement,To Do,Critical,issue_created
+JR0184,2026-08-07 23:40:00,DEV007,COGNI-261,Task,Done,Critical,comment_added
+JR0109,2026-08-07 23:43:00,DEV005,DATA-281,Improvement,Testing,High,status_changed
+JR0430,2026-08-07 23:52:00,DEV002,DEVOPS-232,Task,Testing,High,issue_assigned
+JR0309,2026-08-08 00:13:00,DEV006,DATA-498,Bug,Testing,Medium,issue_updated
+JR0013,2026-08-08 01:23:00,DEV002,DATA-176,Task,Testing,High,status_changed
+JR0326,2026-08-08 01:28:00,DEV009,COGNI-998,Story,Code Review,Critical,comment_added
+JR0167,2026-08-08 03:26:00,DEV009,DATA-406,Task,Code Review,Low,issue_assigned
+JR0248,2026-08-08 04:03:00,DEV006,DATA-532,Task,In Progress,Low,issue_assigned
+JR0016,2026-08-08 04:46:00,DEV007,DATA-409,Improvement,To Do,High,issue_assigned
+JR0254,2026-08-08 04:46:00,DEV010,DEVOPS-249,Bug,In Progress,High,issue_assigned
+JR0055,2026-08-08 05:17:00,DEV010,DATA-247,Improvement,Code Review,Critical,issue_assigned
+JR0312,2026-08-08 05:40:00,DEV001,COGNI-197,Story,Testing,Critical,issue_created
+JR0137,2026-08-08 05:52:00,DEV006,COGNI-157,Story,To Do,Low,issue_created
+JR0317,2026-08-08 06:10:00,DEV005,COGNI-531,Task,Done,Medium,comment_added
+JR0003,2026-08-08 06:28:00,DEV007,DEVOPS-514,Story,Code Review,Low,issue_assigned
+JR0180,2026-08-08 06:32:00,DEV007,COGNI-955,Improvement,Done,Critical,status_changed
+JR0462,2026-08-08 08:13:00,DEV001,DEVOPS-483,Improvement,To Do,Medium,issue_created
+JR0142,2026-08-08 08:23:00,DEV006,DATA-374,Bug,In Progress,Critical,issue_assigned
+JR0475,2026-08-08 09:14:00,DEV006,COGNI-600,Improvement,Testing,Medium,issue_created
+JR0067,2026-08-08 10:29:00,DEV002,DEVOPS-152,Bug,Done,Low,issue_created
+JR0098,2026-08-08 12:17:00,DEV003,DEVOPS-317,Improvement,Code Review,Medium,status_changed
+JR0349,2026-08-08 12:35:00,DEV002,DEVOPS-755,Improvement,Done,Medium,status_changed
+JR0398,2026-08-08 12:40:00,DEV008,COGNI-605,Story,In Progress,Critical,issue_updated
+JR0005,2026-08-08 13:15:00,DEV002,DEVOPS-941,Story,To Do,High,comment_added
+JR0435,2026-08-08 13:19:00,DEV010,DEVOPS-656,Bug,Done,Low,issue_assigned
+JR0357,2026-08-08 14:50:00,DEV010,DATA-605,Task,To Do,Low,issue_assigned
+JR0243,2026-08-08 15:19:00,DEV004,DEVOPS-337,Task,Done,High,issue_assigned
+JR0449,2026-08-08 15:36:00,DEV009,DATA-296,Task,To Do,High,issue_created
+JR0217,2026-08-08 15:37:00,DEV004,DEVOPS-341,Task,To Do,Medium,issue_updated
+JR0245,2026-08-08 16:04:00,DEV002,DEVOPS-315,Story,To Do,High,issue_assigned
+JR0241,2026-08-08 16:43:00,DEV002,DEVOPS-123,Task,Done,High,issue_created
+JR0132,2026-08-08 17:34:00,DEV010,COGNI-869,Task,Code Review,High,issue_updated
+JR0371,2026-08-08 17:47:00,DEV005,DEVOPS-827,Story,Testing,Critical,status_changed
+JR0237,2026-08-08 19:19:00,DEV008,COGNI-190,Improvement,Done,Critical,issue_created
+JR0230,2026-08-08 19:27:00,DEV003,COGNI-347,Bug,To Do,High,comment_added
+JR0105,2026-08-08 20:40:00,DEV003,DEVOPS-404,Task,Done,High,issue_created
+JR0294,2026-08-08 21:42:00,DEV006,COGNI-960,Task,To Do,High,status_changed
+JR0311,2026-08-08 22:05:00,DEV010,DATA-911,Task,To Do,Low,issue_assigned
+JR0041,2026-08-08 22:15:00,DEV008,COGNI-986,Improvement,To Do,Low,issue_created
+JR0143,2026-08-08 22:49:00,DEV008,DEVOPS-428,Task,Done,Critical,issue_created
+JR0352,2026-08-09 00:13:00,DEV005,COGNI-294,Story,In Progress,Medium,status_changed
+JR0141,2026-08-09 00:17:00,DEV009,DEVOPS-616,Story,To Do,Critical,status_changed
+JR0484,2026-08-09 00:35:00,DEV005,DATA-377,Story,To Do,High,issue_created
+JR0253,2026-08-09 01:03:00,DEV009,DEVOPS-158,Story,To Do,Critical,comment_added
+JR0036,2026-08-09 02:30:00,DEV008,DATA-105,Task,Code Review,Medium,status_changed
+JR0069,2026-08-09 04:22:00,DEV001,DEVOPS-302,Task,Done,Medium,comment_added
+JR0439,2026-08-09 04:46:00,DEV004,COGNI-123,Bug,To Do,Critical,comment_added
+JR0218,2026-08-09 05:07:00,DEV008,DATA-813,Bug,In Progress,High,status_changed
+JR0238,2026-08-09 05:25:00,DEV005,DEVOPS-550,Improvement,To Do,Critical,issue_updated
+JR0172,2026-08-09 05:42:00,DEV008,COGNI-642,Story,Code Review,Medium,issue_created
+JR0009,2026-08-09 05:54:00,DEV010,DEVOPS-144,Story,In Progress,Low,status_changed
+JR0422,2026-08-09 07:05:00,DEV003,DATA-971,Improvement,In Progress,High,status_changed
+JR0057,2026-08-09 07:18:00,DEV009,COGNI-871,Improvement,Done,Critical,issue_assigned
+JR0192,2026-08-09 07:50:00,DEV005,DEVOPS-437,Bug,In Progress,Medium,comment_added
+JR0122,2026-08-09 10:08:00,DEV004,DATA-859,Task,Code Review,Critical,issue_updated
+JR0170,2026-08-09 11:37:00,DEV002,DEVOPS-785,Improvement,To Do,Critical,comment_added
+JR0499,2026-08-09 11:38:00,DEV002,DATA-424,Bug,To Do,Medium,issue_created
+JR0463,2026-08-09 12:42:00,DEV001,DATA-420,Bug,Testing,Medium,status_changed
+JR0497,2026-08-09 13:02:00,DEV004,DATA-424,Task,Code Review,Medium,issue_created
+JR0452,2026-08-09 13:08:00,DEV010,COGNI-914,Bug,Done,Critical,issue_updated
+JR0500,2026-08-09 13:49:00,DEV005,COGNI-672,Task,Done,Low,status_changed
+JR0451,2026-08-09 14:13:00,DEV006,DATA-774,Task,Code Review,Medium,comment_added
+JR0214,2026-08-09 15:00:00,DEV008,DEVOPS-830,Bug,Code Review,Critical,issue_assigned
+JR0429,2026-08-09 15:06:00,DEV005,DEVOPS-111,Improvement,Testing,High,status_changed
+JR0227,2026-08-09 15:43:00,DEV006,DEVOPS-691,Task,In Progress,Low,issue_updated
+JR0104,2026-08-09 15:53:00,DEV003,DEVOPS-472,Bug,To Do,High,issue_created
+JR0411,2026-08-09 17:17:00,DEV005,COGNI-348,Story,Testing,Medium,issue_assigned
+JR0391,2026-08-09 17:41:00,DEV008,DATA-201,Story,In Progress,High,issue_updated
+JR0178,2026-08-09 18:10:00,DEV003,COGNI-606,Improvement,To Do,High,issue_updated
+JR0375,2026-08-09 18:58:00,DEV001,DATA-679,Story,To Do,Low,issue_assigned
+JR0426,2026-08-09 19:08:00,DEV010,DEVOPS-267,Story,Done,Medium,comment_added
+JR0265,2026-08-09 19:58:00,DEV010,DEVOPS-884,Improvement,Code Review,Low,comment_added
+JR0448,2026-08-09 22:06:00,DEV002,COGNI-475,Task,Done,Low,issue_created
+JR0029,2026-08-09 23:21:00,DEV006,COGNI-699,Story,In Progress,High,issue_assigned
+JR0032,2026-08-09 23:23:00,DEV008,DATA-214,Story,Done,Medium,issue_assigned
+JR0394,2026-08-09 23:59:00,DEV005,DATA-948,Improvement,Testing,Low,status_changed
+JR0361,2026-08-10 00:03:00,DEV004,DEVOPS-857,Story,In Progress,Critical,status_changed
+JR0478,2026-08-10 01:23:00,DEV009,DEVOPS-240,Bug,To Do,Low,issue_assigned
+JR0367,2026-08-10 02:42:00,DEV002,COGNI-468,Task,Done,High,comment_added
+JR0276,2026-08-10 03:37:00,DEV004,DATA-684,Improvement,To Do,High,issue_created
+JR0469,2026-08-10 04:37:00,DEV010,DATA-915,Story,Code Review,Critical,issue_created
+JR0402,2026-08-10 05:19:00,DEV009,COGNI-167,Task,Testing,Low,comment_added
+JR0154,2026-08-10 05:56:00,DEV001,DATA-968,Improvement,Done,High,issue_assigned
+JR0049,2026-08-10 06:21:00,DEV006,DATA-749,Story,Done,High,status_changed
+JR0042,2026-08-10 06:23:00,DEV001,DEVOPS-671,Task,To Do,Medium,issue_updated
+JR0025,2026-08-10 06:44:00,DEV009,DEVOPS-152,Story,Testing,Medium,issue_assigned
+JR0173,2026-08-10 07:05:00,DEV003,DEVOPS-865,Bug,Code Review,High,status_changed
+JR0174,2026-08-10 08:14:00,DEV009,DATA-293,Improvement,Code Review,Medium,status_changed
+JR0277,2026-08-10 08:49:00,DEV009,COGNI-970,Task,Testing,Low,comment_added
+JR0163,2026-08-10 08:51:00,DEV004,DEVOPS-435,Task,Code Review,Low,status_changed
+JR0129,2026-08-10 09:07:00,DEV009,DEVOPS-304,Story,In Progress,Low,issue_updated
+JR0297,2026-08-10 12:25:00,DEV002,COGNI-768,Bug,Code Review,Low,issue_assigned
+JR0072,2026-08-10 12:33:00,DEV004,DATA-804,Story,Testing,High,comment_added
+JR0373,2026-08-10 12:40:00,DEV004,COGNI-976,Task,To Do,Low,issue_created
+JR0022,2026-08-10 12:48:00,DEV007,DEVOPS-747,Improvement,In Progress,Medium,status_changed
+JR0431,2026-08-10 13:22:00,DEV001,COGNI-476,Task,Code Review,Low,issue_assigned
+JR0030,2026-08-10 13:57:00,DEV003,DEVOPS-276,Improvement,In Progress,High,comment_added
+JR0208,2026-08-10 16:05:00,DEV009,DEVOPS-223,Task,Done,Low,status_changed
+JR0001,2026-08-10 16:06:00,DEV009,DEVOPS-818,Task,In Progress,Critical,status_changed
+JR0088,2026-08-10 16:19:00,DEV004,DEVOPS-799,Improvement,In Progress,Critical,issue_created
+JR0145,2026-08-10 17:46:00,DEV009,DEVOPS-463,Bug,In Progress,Low,issue_updated
+JR0425,2026-08-10 18:32:00,DEV004,COGNI-536,Story,In Progress,Medium,issue_assigned
+JR0303,2026-08-10 19:10:00,DEV003,COGNI-510,Improvement,To Do,Low,issue_created
+JR0097,2026-08-10 19:15:00,DEV005,COGNI-557,Bug,Code Review,Critical,issue_updated
+JR0188,2026-08-10 19:57:00,DEV005,DEVOPS-785,Improvement,Testing,High,issue_updated
+JR0159,2026-08-10 20:11:00,DEV004,DATA-696,Improvement,Testing,Medium,status_changed
+JR0246,2026-08-10 20:46:00,DEV006,DATA-953,Story,To Do,Low,issue_assigned
+JR0201,2026-08-10 20:55:00,DEV003,DEVOPS-507,Bug,In Progress,Medium,issue_created
+JR0216,2026-08-10 21:11:00,DEV008,COGNI-116,Task,Testing,High,issue_created
+JR0261,2026-08-10 21:16:00,DEV008,DEVOPS-271,Task,To Do,High,issue_updated
+JR0470,2026-08-10 21:27:00,DEV008,DATA-891,Story,Testing,Low,status_changed
+JR0260,2026-08-10 22:53:00,DEV006,DATA-724,Improvement,Testing,Critical,status_changed
+JR0480,2026-08-10 23:07:00,DEV002,DEVOPS-283,Story,Done,Low,issue_assigned
+JR0224,2026-08-10 23:33:00,DEV006,COGNI-818,Task,In Progress,Low,status_changed
+JR0445,2026-08-11 00:38:00,DEV006,DEVOPS-549,Task,Testing,Critical,issue_updated
+JR0086,2026-08-11 01:40:00,DEV010,DATA-525,Improvement,Code Review,Critical,issue_created
+JR0087,2026-08-11 02:27:00,DEV001,DATA-562,Improvement,Testing,Critical,comment_added
+JR0366,2026-08-11 03:05:00,DEV010,COGNI-122,Bug,Code Review,Medium,issue_created
+JR0465,2026-08-11 03:47:00,DEV009,COGNI-780,Story,Done,Low,issue_assigned
+JR0125,2026-08-11 04:02:00,DEV004,DEVOPS-196,Task,To Do,High,comment_added
+JR0066,2026-08-11 04:03:00,DEV002,DATA-997,Bug,Done,Critical,issue_created
+JR0483,2026-08-11 05:19:00,DEV004,DEVOPS-322,Story,Done,Medium,comment_added
+JR0482,2026-08-11 05:33:00,DEV010,DEVOPS-567,Task,In Progress,High,issue_created
+JR0134,2026-08-11 06:05:00,DEV004,DATA-263,Improvement,Done,Low,issue_created
+JR0479,2026-08-11 09:43:00,DEV006,DATA-893,Bug,Done,High,issue_updated
+JR0498,2026-08-11 10:01:00,DEV004,DEVOPS-322,Story,Code Review,Critical,issue_created
+JR0360,2026-08-11 10:42:00,DEV010,DEVOPS-460,Task,Testing,High,issue_assigned
+JR0492,2026-08-11 10:59:00,DEV008,COGNI-604,Story,Testing,Critical,issue_created
+JR0018,2026-08-11 11:11:00,DEV002,DATA-689,Bug,Code Review,High,status_changed
+JR0203,2026-08-11 12:56:00,DEV004,COGNI-216,Improvement,In Progress,Low,comment_added
+JR0370,2026-08-11 13:08:00,DEV007,COGNI-113,Improvement,To Do,High,issue_updated
+JR0063,2026-08-11 13:44:00,DEV009,DEVOPS-348,Bug,Code Review,High,comment_added
+JR0383,2026-08-11 14:19:00,DEV002,DATA-218,Task,Testing,Critical,issue_created
+JR0220,2026-08-11 14:36:00,DEV010,DATA-367,Story,In Progress,Critical,comment_added
+JR0139,2026-08-11 14:40:00,DEV010,COGNI-420,Bug,Code Review,High,issue_created
+JR0328,2026-08-11 14:47:00,DEV005,DEVOPS-345,Story,Code Review,Low,comment_added
+JR0099,2026-08-11 15:16:00,DEV007,COGNI-399,Story,In Progress,Critical,comment_added
+JR0355,2026-08-11 16:15:00,DEV009,COGNI-192,Task,Done,Low,issue_updated
+JR0293,2026-08-11 17:31:00,DEV001,DATA-882,Improvement,Code Review,Medium,status_changed
+JR0262,2026-08-11 17:47:00,DEV007,DATA-371,Story,Done,High,issue_updated
+JR0108,2026-08-11 17:50:00,DEV010,DEVOPS-941,Task,Done,Medium,issue_updated
+JR0225,2026-08-11 18:14:00,DEV005,DEVOPS-816,Improvement,Code Review,Critical,comment_added
+JR0466,2026-08-11 18:22:00,DEV003,COGNI-555,Task,Code Review,Medium,comment_added
+JR0095,2026-08-11 20:25:00,DEV008,DEVOPS-238,Improvement,Done,Medium,status_changed
+JR0211,2026-08-11 21:02:00,DEV003,COGNI-550,Story,To Do,Low,issue_updated
+JR0116,2026-08-11 22:29:00,DEV002,DEVOPS-230,Bug,In Progress,Medium,issue_updated
+JR0388,2026-08-11 22:38:00,DEV001,DATA-907,Improvement,In Progress,Low,comment_added
+JR0414,2026-08-11 23:21:00,DEV004,COGNI-870,Story,In Progress,Low,issue_created
+JR0151,2026-08-11 23:52:00,DEV003,COGNI-337,Bug,To Do,High,issue_updated
+JR0171,2026-08-11 23:53:00,DEV006,DEVOPS-595,Task,In Progress,High,issue_assigned
+JR0288,2026-08-12 00:52:00,DEV001,DATA-276,Bug,To Do,Medium,issue_updated
+JR0128,2026-08-12 00:55:00,DEV001,DEVOPS-508,Task,To Do,Low,comment_added
+JR0008,2026-08-12 02:09:00,DEV008,DEVOPS-921,Bug,In Progress,Critical,comment_added
+JR0380,2026-08-12 02:23:00,DEV005,COGNI-387,Story,Code Review,Low,issue_updated
+JR0347,2026-08-12 02:44:00,DEV003,DATA-260,Task,Testing,Critical,status_changed
+JR0406,2026-08-12 02:50:00,DEV001,COGNI-182,Task,Code Review,High,issue_assigned
+JR0353,2026-08-12 04:01:00,DEV009,DATA-736,Task,Code Review,Critical,issue_created
+JR0165,2026-08-12 04:02:00,DEV005,DATA-405,Task,To Do,Medium,issue_created
+JR0400,2026-08-12 06:42:00,DEV003,COGNI-696,Improvement,To Do,Medium,status_changed
+JR0270,2026-08-12 09:09:00,DEV009,DEVOPS-914,Story,Done,Critical,status_changed
+JR0144,2026-08-12 09:30:00,DEV006,DEVOPS-308,Story,Code Review,Critical,issue_assigned
+JR0488,2026-08-12 10:06:00,DEV008,DEVOPS-778,Bug,Testing,Medium,issue_updated
+JR0269,2026-08-12 10:20:00,DEV005,COGNI-321,Task,Code Review,Low,issue_updated
+JR0268,2026-08-12 11:15:00,DEV002,DATA-607,Bug,In Progress,High,issue_assigned
+JR0031,2026-08-12 11:16:00,DEV008,DATA-907,Story,Done,Critical,comment_added
+JR0390,2026-08-12 13:08:00,DEV007,COGNI-568,Task,In Progress,Medium,comment_added
+JR0197,2026-08-12 14:11:00,DEV001,DATA-988,Improvement,Done,Critical,issue_assigned
+JR0356,2026-08-12 16:13:00,DEV007,COGNI-931,Task,Code Review,High,issue_updated
+JR0382,2026-08-12 16:26:00,DEV004,COGNI-985,Bug,To Do,Critical,status_changed
+JR0280,2026-08-12 18:21:00,DEV010,COGNI-725,Bug,To Do,Medium,status_changed
+JR0340,2026-08-12 18:38:00,DEV008,COGNI-283,Task,To Do,Critical,status_changed
+JR0191,2026-08-12 18:54:00,DEV004,DATA-464,Improvement,Done,Low,issue_assigned
+JR0393,2026-08-12 19:09:00,DEV003,DEVOPS-702,Task,In Progress,Medium,comment_added
+JR0447,2026-08-12 19:17:00,DEV001,DATA-443,Bug,In Progress,Low,comment_added
+JR0182,2026-08-12 20:10:00,DEV007,DATA-906,Bug,Code Review,Critical,issue_updated
+JR0130,2026-08-12 20:13:00,DEV010,COGNI-458,Bug,To Do,Critical,comment_added
+JR0091,2026-08-12 22:32:00,DEV004,COGNI-749,Task,In Progress,High,comment_added
+JR0302,2026-08-12 23:04:00,DEV004,DEVOPS-429,Task,To Do,High,status_changed
+JR0046,2026-08-13 00:12:00,DEV007,DEVOPS-661,Task,Code Review,Medium,comment_added
+JR0090,2026-08-13 00:42:00,DEV009,DATA-677,Improvement,Testing,Low,issue_assigned
+JR0282,2026-08-13 01:17:00,DEV002,DEVOPS-458,Improvement,Code Review,Critical,issue_assigned
+JR0322,2026-08-13 02:26:00,DEV004,DATA-747,Story,Done,Medium,issue_assigned
+JR0473,2026-08-13 02:27:00,DEV003,COGNI-644,Bug,In Progress,High,comment_added
+JR0133,2026-08-13 02:36:00,DEV004,COGNI-122,Improvement,Testing,High,issue_assigned
+JR0231,2026-08-13 03:08:00,DEV006,DEVOPS-913,Bug,Done,Critical,status_changed
+JR0281,2026-08-13 03:52:00,DEV008,DEVOPS-803,Story,In Progress,Low,status_changed
+JR0119,2026-08-13 04:31:00,DEV003,DEVOPS-379,Task,To Do,Medium,issue_updated
+JR0056,2026-08-13 04:49:00,DEV001,DATA-379,Task,To Do,Low,issue_updated
+JR0044,2026-08-13 05:30:00,DEV004,COGNI-645,Improvement,To Do,Medium,status_changed
+JR0486,2026-08-13 06:02:00,DEV007,DATA-370,Bug,Done,Medium,issue_assigned
+JR0014,2026-08-13 07:00:00,DEV004,COGNI-386,Improvement,Code Review,Low,issue_updated
+JR0415,2026-08-13 07:01:00,DEV004,DEVOPS-523,Improvement,To Do,Low,issue_assigned
+JR0081,2026-08-13 07:16:00,DEV007,COGNI-501,Task,Code Review,Medium,issue_updated
+JR0166,2026-08-13 07:41:00,DEV008,DATA-468,Story,Done,Critical,issue_assigned
+JR0252,2026-08-13 08:52:00,DEV006,DEVOPS-902,Story,Done,Critical,issue_created
+JR0272,2026-08-13 09:37:00,DEV003,DATA-611,Task,In Progress,High,status_changed
+JR0386,2026-08-13 09:49:00,DEV002,COGNI-800,Task,Code Review,Medium,issue_updated
+JR0298,2026-08-13 10:17:00,DEV007,DATA-696,Bug,Done,Medium,issue_assigned
+JR0193,2026-08-13 10:20:00,DEV002,DEVOPS-584,Task,Code Review,Low,issue_updated
+JR0487,2026-08-13 12:14:00,DEV002,DEVOPS-492,Story,In Progress,High,comment_added
+JR0457,2026-08-13 12:26:00,DEV003,COGNI-138,Improvement,Code Review,High,issue_created
+JR0460,2026-08-13 12:48:00,DEV008,DEVOPS-846,Bug,Testing,High,issue_created
+JR0101,2026-08-13 13:46:00,DEV001,COGNI-344,Story,In Progress,Medium,issue_created
+JR0146,2026-08-13 14:49:00,DEV008,DEVOPS-886,Improvement,Done,Low,status_changed
+JR0494,2026-08-13 15:31:00,DEV009,DEVOPS-308,Improvement,Testing,Low,issue_updated
+JR0169,2026-08-13 15:32:00,DEV008,DEVOPS-240,Story,To Do,High,issue_updated
+JR0100,2026-08-13 15:41:00,DEV001,COGNI-577,Task,Code Review,High,issue_updated
+JR0490,2026-08-13 15:51:00,DEV003,COGNI-239,Improvement,In Progress,Critical,issue_created
+JR0233,2026-08-13 16:02:00,DEV002,DATA-331,Bug,Testing,High,issue_updated
+JR0444,2026-08-13 18:48:00,DEV002,DEVOPS-991,Task,In Progress,Critical,issue_assigned
+JR0059,2026-08-13 19:14:00,DEV002,COGNI-420,Improvement,Code Review,Low,status_changed
+JR0396,2026-08-13 20:42:00,DEV003,DATA-208,Task,Testing,Low,issue_assigned
+JR0327,2026-08-13 21:03:00,DEV009,DEVOPS-193,Story,To Do,Medium,issue_assigned
+JR0073,2026-08-13 21:24:00,DEV005,COGNI-870,Improvement,In Progress,High,issue_updated
+JR0096,2026-08-13 23:09:00,DEV010,DEVOPS-420,Task,Testing,Low,status_changed
+JR0450,2026-08-13 23:15:00,DEV003,DEVOPS-176,Bug,To Do,Medium,issue_created
+JR0438,2026-08-13 23:19:00,DEV002,DATA-107,Improvement,To Do,High,issue_created
+JR0346,2026-08-13 23:32:00,DEV008,DATA-301,Bug,To Do,High,comment_added
+JR0075,2026-08-14 00:29:00,DEV001,DEVOPS-940,Improvement,Code Review,Critical,comment_added
+JR0077,2026-08-14 03:01:00,DEV002,DEVOPS-262,Bug,Code Review,Low,issue_updated
+JR0333,2026-08-14 03:13:00,DEV002,DATA-330,Task,To Do,Low,status_changed
+JR0324,2026-08-14 03:23:00,DEV009,DEVOPS-586,Improvement,Done,Critical,issue_assigned
+JR0472,2026-08-14 03:33:00,DEV009,DATA-156,Story,Code Review,Medium,status_changed
+JR0152,2026-08-14 04:23:00,DEV006,COGNI-494,Task,In Progress,Low,issue_assigned
+JR0222,2026-08-14 05:11:00,DEV007,COGNI-608,Improvement,Code Review,Critical,issue_created
+JR0194,2026-08-14 05:21:00,DEV007,DEVOPS-242,Bug,To Do,High,issue_assigned
+JR0037,2026-08-14 05:31:00,DEV006,DEVOPS-109,Story,In Progress,Low,comment_added
+JR0453,2026-08-14 07:36:00,DEV005,COGNI-697,Improvement,Testing,Critical,status_changed
+JR0190,2026-08-14 08:11:00,DEV001,DATA-152,Bug,In Progress,Medium,status_changed
+JR0372,2026-08-14 11:02:00,DEV007,DEVOPS-354,Task,In Progress,Medium,issue_created
+JR0242,2026-08-14 11:53:00,DEV005,DEVOPS-571,Improvement,Code Review,Critical,issue_updated
+JR0065,2026-08-14 12:00:00,DEV004,DEVOPS-979,Improvement,Code Review,Low,issue_updated
+JR0043,2026-08-14 12:38:00,DEV009,DATA-671,Task,Testing,Critical,issue_updated
+JR0423,2026-08-14 15:08:00,DEV001,DEVOPS-494,Bug,To Do,Medium,issue_assigned
+JR0150,2026-08-14 15:13:00,DEV006,DEVOPS-384,Bug,To Do,High,comment_added
+JR0427,2026-08-14 16:50:00,DEV001,DATA-228,Improvement,Testing,Low,status_changed
+JR0290,2026-08-14 18:09:00,DEV010,COGNI-500,Improvement,Done,Critical,issue_assigned
+JR0120,2026-08-14 19:47:00,DEV008,DEVOPS-575,Improvement,Code Review,Low,issue_assigned
+JR0187,2026-08-14 19:50:00,DEV007,DEVOPS-899,Story,In Progress,Low,issue_created
+JR0320,2026-08-14 19:53:00,DEV007,DATA-205,Bug,In Progress,Critical,status_changed
+JR0111,2026-08-14 20:00:00,DEV006,DATA-806,Bug,Done,Critical,issue_assigned
+JR0273,2026-08-14 20:06:00,DEV007,DEVOPS-810,Task,In Progress,Critical,issue_updated
+JR0196,2026-08-14 20:26:00,DEV001,DEVOPS-450,Task,In Progress,Critical,issue_updated
+JR0379,2026-08-14 21:48:00,DEV003,DATA-970,Bug,Code Review,High,status_changed
+JR0348,2026-08-14 23:02:00,DEV002,COGNI-391,Improvement,Done,Low,issue_created
+JR0015,2026-08-15 00:30:00,DEV006,DEVOPS-916,Improvement,To Do,High,comment_added
+JR0147,2026-08-15 00:52:00,DEV004,COGNI-572,Story,Done,Critical,issue_assigned
+JR0135,2026-08-15 04:18:00,DEV002,COGNI-513,Bug,Done,Medium,issue_created
+JR0331,2026-08-15 04:56:00,DEV007,DEVOPS-454,Bug,In Progress,High,issue_assigned
+JR0365,2026-08-15 05:20:00,DEV008,COGNI-285,Bug,Testing,High,issue_updated
+JR0054,2026-08-15 05:56:00,DEV004,DEVOPS-960,Bug,Done,Medium,comment_added
+JR0419,2026-08-15 06:18:00,DEV009,DEVOPS-925,Improvement,To Do,High,status_changed
+JR0395,2026-08-15 08:44:00,DEV009,DEVOPS-626,Bug,To Do,Medium,issue_assigned
