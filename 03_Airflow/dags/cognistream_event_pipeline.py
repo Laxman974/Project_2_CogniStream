@@ -5,7 +5,10 @@ import pendulum
 from airflow.sdk import dag, task
 
 
-PROJECT_ROOT = Path(r"C:\Users\Admin\Desktop\Project_2_CogniStream")
+# WSL/Linux project path
+PROJECT_ROOT = Path("/mnt/d/Projects/Project_2_CogniStream")
+
+# Dataset events folder
 EVENTS_FOLDER = PROJECT_ROOT / "01_Dataset" / "events"
 
 
@@ -41,12 +44,12 @@ def cognistream_event_pipeline():
 
         return True
 
+
     @task
     def process_github_events():
         """Read and validate GitHub events."""
 
         file_path = EVENTS_FOLDER / "github_events.csv"
-
         df = pd.read_csv(file_path)
 
         print("GitHub Events")
@@ -73,12 +76,12 @@ def cognistream_event_pipeline():
 
         return len(df)
 
+
     @task
     def process_slack_events():
         """Read and validate Slack events."""
 
         file_path = EVENTS_FOLDER / "slack_events.csv"
-
         df = pd.read_csv(file_path)
 
         print("Slack Events")
@@ -105,6 +108,8 @@ def cognistream_event_pipeline():
 
         return len(df)
 
+
+    # Define task dependencies
     files_checked = check_event_files()
 
     github_count = process_github_events()
@@ -113,4 +118,5 @@ def cognistream_event_pipeline():
     files_checked >> [github_count, slack_count]
 
 
+# Create and register the DAG
 cognistream_event_pipeline()
