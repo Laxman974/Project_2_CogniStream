@@ -139,15 +139,136 @@ def cognistream_event_pipeline():
             "file": "slack_events.csv",
         }
 
+    @task
+    def process_jira_events():
+        """Read and validate Jira events."""
+
+        file_path = EVENTS_FOLDER / "jira_events.csv"
+
+        df = pd.read_csv(file_path)
+
+        required_columns = [
+            "event_id",
+            "timestamp",
+            "developer_id",
+            "issue_key",
+            "issue_type",
+            "status",
+            "priority",
+            "event_type",
+        ]
+
+        missing_columns = [
+            column
+            for column in required_columns
+            if column not in df.columns
+        ]
+
+        if missing_columns:
+            raise ValueError(
+                f"Missing Jira columns: {missing_columns}"
+            )
+
+        jira_rows = len(df)
+
+        print(f"Jira Records: {jira_rows}")
+
+        return {
+            "rows": jira_rows,
+            "file": "jira_events.csv",
+        }
+    
+    @task
+    def process_ide_events():
+        """Read and validate IDE events."""
+
+        file_path = EVENTS_FOLDER / "ide_events.csv"
+
+        df = pd.read_csv(file_path)
+
+        required_columns = [
+            "event_id",
+            "timestamp",
+            "developer_id",
+            "activity_type",
+            "language",
+            "duration_seconds",
+        ]
+
+        missing_columns = [
+            column
+            for column in required_columns
+            if column not in df.columns
+        ]
+
+        if missing_columns:
+            raise ValueError(
+                f"Missing IDE columns: {missing_columns}"
+            )
+
+        ide_rows = len(df)
+
+        print(f"IDE Records: {ide_rows}")
+
+        return {
+            "rows": ide_rows,
+            "file": "ide_events.csv",
+        }
+    
+    @task
+    def load_to_clickhouse():
+        """Load all event CSV files into ClickHouse."""
+
+        client = clickhouse_connect.get_client(
+            host="localhost",
+            port=8123,
+            username="default",
+            password="laxman",
+            database="cognistream",
+        )
+
+        tables = {
+            "github_events": "github_events.csv",
+            "slack_events": "slack_events.csv",
+            "jira_events": "jira_events.csv",
+            "ide_events": "ide_events.csv",
+        }
+
+        for table_name, file_name in tables.items():
+            file_path = EVENTS_FOLDER / file_name
+
+            df = pd.read_csv(file_path)
+            df["timestamp"] = pd.to_datetime(df["timestamp"])
+
+            client.command(f"TRUNCATE TABLE {table_name}")
+
+            client.insert(
+                table_name,
+                df.values.tolist(),
+                column_names=df.columns.tolist(),
+            )
+
+            print(f"Loaded {len(df)} rows into {table_name}")
+
+        print("All tables loaded successfully.")
+
+
 
     @task
-    def send_success_email(github_info, slack_info):
+    def send_success_email(
+    github_info,
+    slack_info,
+    jira_info,
+    ide_info,
+    ):
         """Send daily pipeline report."""
 
         github_rows = github_info["rows"]
         slack_rows = slack_info["rows"]
+        jira_rows = jira_info["rows"]
+        ide_rows = ide_info["rows"]
 
-        total_rows = github_rows + slack_rows
+        total_rows = github_rows + slack_rows + jira_rows + ide_rows
 
         execution_time = datetime.now().strftime(
             "%d-%m-%Y %I:%M:%S %p"
@@ -178,6 +299,16 @@ def cognistream_event_pipeline():
             </tr>
 
             <tr>
+                <td>Jira Records</td>
+                <td>{jira_rows}</td>
+            </tr>
+
+            <tr>
+                <td>IDE Records</td>
+                <td>{ide_rows}</td>
+            </tr>
+
+            <tr>
                 <td><b>Total Records</b></td>
                 <td><b>{total_rows}</b></td>
             </tr>
@@ -191,13 +322,20 @@ def cognistream_event_pipeline():
                 <td>Processed Files</td>
                 <td>
                     ✓ github_events.csv<br>
-                    ✓ slack_events.csv
+                    ✓ slack_events.csv<br>
+                    ✓ jira_events.csv<br>
+                    ✓ ide_events.csv
                 </td>
             </tr>
 
             <tr>
                 <td>Missing Files</td>
                 <td>None</td>
+            </tr>
+
+            <tr>
+                <td>ClickHouse Load</td>
+                <td>SUCCESS ✅</td>
             </tr>
 
             <tr>
@@ -214,7 +352,6 @@ def cognistream_event_pipeline():
         <b>CogniStream Pipeline</b>
         </p>
         """
-
         send_email(
             to="cognistream.analytics@gmail.com",
             subject=subject,
@@ -226,21 +363,37 @@ def cognistream_event_pipeline():
 
     
     # Task Dependencies
-    
     files_checked = check_event_files()
 
     github_info = process_github_events()
-
     slack_info = process_slack_events()
+    jira_info = process_jira_events()
+    ide_info = process_ide_events()
+
+    load_task = load_to_clickhouse()
 
     email_task = send_success_email(
         github_info,
         slack_info,
+        jira_info,
+        ide_info,
     )
 
-    files_checked >> [github_info, slack_info]
+    files_checked >> [
+        github_info,
+        slack_info,
+        jira_info,
+        ide_info,
+    ]
 
-    [github_info, slack_info] >> email_task
+    [
+        github_info,
+        slack_info,
+        jira_info,
+        ide_info,
+    ] >> load_task
+
+    load_task >> email_task
 
 
 # Register the DAG
