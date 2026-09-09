@@ -3,6 +3,7 @@ from datetime import datetime
 
 import pandas as pd
 import pendulum
+import clickhouse_connect
 from airflow.sdk import dag, task
 from airflow.utils.email import send_email
 
@@ -42,6 +43,8 @@ def cognistream_event_pipeline():
         required_files = [
             "github_events.csv",
             "slack_events.csv",
+            "jira_events.csv",
+            "ide_events.csv",
         ]
 
         missing_files = []
@@ -62,7 +65,6 @@ def cognistream_event_pipeline():
             )
 
         return True
-
 
     @task
     def process_github_events():
