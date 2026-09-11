@@ -1,6 +1,8 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 from routers import router
+
 
 app = FastAPI(
     title="CogniStream API",
@@ -8,6 +10,23 @@ app = FastAPI(
     version="1.0.0",
 )
 
+
+# ---------------------------------------------------------
+# CORS
+# ---------------------------------------------------------
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
+# ---------------------------------------------------------
+# ROOT
+# ---------------------------------------------------------
 
 @app.get("/")
 def root():
@@ -19,6 +38,10 @@ def root():
     }
 
 
+# ---------------------------------------------------------
+# HEALTH CHECK
+# ---------------------------------------------------------
+
 @app.get("/health")
 def health():
 
@@ -27,5 +50,9 @@ def health():
         "service": "CogniStream API",
     }
 
+
+# ---------------------------------------------------------
+# ROUTES
+# ---------------------------------------------------------
 
 app.include_router(router)
