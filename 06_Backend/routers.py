@@ -59,7 +59,8 @@ def get_summary():
         countIf(flow_state = 'Deep Flow') AS deep_flow,
         countIf(flow_state = 'Focused') AS focused,
         countIf(flow_state = 'Neutral') AS neutral,
-        countIf(flow_state = 'Distracted') AS distracted
+        countIf(flow_state = 'Distracted') AS distracted,
+        countIf(flow_state = 'Burnout Risk') AS burnout_risk
     FROM cognistream.developer_flow_state
     """
 
@@ -75,6 +76,7 @@ def get_summary():
         "focused": int(row["focused"]),
         "neutral": int(row["neutral"]),
         "distracted": int(row["distracted"]),
+        "burnout_risk": int(row["burnout_risk"]),
     }
 
 

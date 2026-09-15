@@ -15,6 +15,7 @@ class FlowSummary(BaseModel):
     focused: int
     neutral: int
     distracted: int
+    burnout_risk: int
 
 
 class ContextSwitchSummary(BaseModel):
