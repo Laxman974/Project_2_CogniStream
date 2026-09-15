@@ -1,481 +1,310 @@
-# ClickHouse
+PROJECT_2_CogniStream
 
-## Purpose
+Objective
 
-This folder contains the ClickHouse database objects used in the CogniStream project. It stores developer event data and supports fast analytical queries for flow state and context switching analysis.
+Develop an end-to-end Developer Flow State Analytics system that collects developer activity events from GitHub, Slack, Jira, and IDE sources, processes the data using Python and Apache Airflow, stores it in ClickHouse, calculates developer flow scores and flow states, and provides analytics through a FastAPI backend and React dashboard.
 
-## Folder Structure
+Datasets
 
-schema/
-- create_database.sql
-- github_events.sql
-- slack_events.sql
-- jira_events.sql
-- activitywatch_events.sql
+GitHub Events
+Slack Events
+Jira Events
+IDE Events
 
-views/
-- developer_flow_summary.sql
-- context_switch_summary.sql
+Technologies Used
 
-queries/
-- flow_state.sql
-- interruption_analysis.sql
-- context_switch_tax.sql
-- top_developers.sql
-
-## Workflow
-
-1. Create the ClickHouse database.
-2. Create tables for each event source.
-3. Load event data into ClickHouse.
-4. Create analytical views.
-5. Run SQL queries for dashboard metrics.
-
-## Data Sources
-
-- GitHub Events
-- Slack Events
-- Jira Events
-- ActivityWatch Events
-
-## Technologies
-
-- ClickHouse
-- SQL# Project_2_CogniStream
-# Project 2 – CogniStream
-
-## 📌 Project Overview
-
-**CogniStream** is a data engineering and analytics project designed to collect, process, and organize developer productivity and activity data from multiple sources.
-
-The project focuses on building a structured event-data pipeline using developer productivity data and simulated events from platforms such as GitHub, Slack, IDE activity, and Jira.
-
-The project is being developed in multiple stages, including data exploration, data cleaning, event generation, workflow orchestration, data storage, backend processing, frontend development, and dashboard creation.
-
----
-
-## 🎯 Project Objectives
-
-* Explore and understand developer productivity data.
-* Clean and prepare raw datasets for further processing.
-* Generate structured developer activity events.
-* Organize events from multiple sources such as GitHub, Slack, IDE, and Jira.
-* Build an automated data pipeline.
-* Store processed event data in a scalable database.
-* Develop backend and frontend components.
-* Create dashboards for analysing developer productivity and activity.
-* Build a complete end-to-end data engineering and analytics workflow.
-
----
-
-## 🏗️ Project Structure
-
-```text
-Project_2_CogniStream/
-│
-├── 01_Dataset/
-│   ├── ai_dev_productivity.csv
-│   ├── cleaned_ai_dev_productivity.csv
-│   └── events/
-│       ├── github_events.csv
-│       ├── ide_events.csv
-│       ├── jira_events.csv
-│       └── slack_events.csv
-│
-├── 02_Python/
-│   ├── 01_dataset_exploration.py
-│   ├── 02_data_cleaning.py
-│   ├── 03_generate_github_events.py
-│   ├── 04_generate_slack_events.py
-│   ├── 05_generate_ide_events.py
-│   └── 06_generate_jira_events.py
-│
-├── 03_Airflow/
-│   └── dags/
-│       └── cognistream_event_pipeline.py
-│
-├── 04_ClickHouse/
-│   ├── sql/
-│   │   └── 01_create_tables.sql
-│   └── scripts/
-│       └── 02_load_data.py
-│
-├── 05_Flow_State/
-│
-├── 06_Backend/
-│
-├── 07_Frontend/
-│
-├── 08_Dashboard/
-│
-├── .gitignore
-└── README.md
-```
-
-> The project is being developed incrementally. Some modules are currently under development.
-
----
-
-# ✅ Completed Work
-
-## 1. Dataset Collection and Preparation
-
-The initial AI developer productivity dataset was added to the project.
-
-### Dataset
-
-```text
-01_Dataset/
-├── ai_dev_productivity.csv
-└── cleaned_ai_dev_productivity.csv
-```
-
-The project also contains generated event datasets:
-
-```text
-01_Dataset/events/
-├── github_events.csv
-├── ide_events.csv
-├── jira_events.csv
-└── slack_events.csv
-```
-
----
-
-## 2. Dataset Exploration
-
-Initial exploratory data analysis was performed using Python.
-
-File:
-
-```text
-02_Python/01_dataset_exploration.py
-```
-
-The exploration included:
-
-* Loading the dataset.
-* Inspecting dataset structure.
-* Checking columns and data types.
-* Examining missing values.
-* Understanding the data distribution.
-* Performing initial statistical exploration.
-
----
-
-## 3. Data Cleaning
-
-A separate Python script was created for data cleaning.
-
-File:
-
-```text
-02_Python/02_data_cleaning.py
-```
-
-The cleaning stage prepares the raw productivity dataset for further processing and analysis.
-
----
-
-## 4. GitHub Event Generation
-
-GitHub developer activity events were generated and stored as a structured CSV dataset.
-
-File:
-
-```text
-02_Python/03_generate_github_events.py
-```
-
-Output:
-
-```text
-01_Dataset/events/github_events.csv
-```
-
----
-
-## 5. Slack Event Generation
-
-Slack activity events were generated to simulate developer communication and collaboration activity.
-
-File:
-
-```text
-02_Python/04_generate_slack_events.py
-```
-
-Output:
-
-```text
-01_Dataset/events/slack_events.csv
-```
-
-Example event fields include:
-
-```text
-event_id
-timestamp
-developer_id
-channel
-notification_type
-```
-
----
-
-## 6. IDE Event Generation
-
-IDE activity events were generated to represent developer coding activities.
-
-File:
-
-```text
-02_Python/05_generate_ide_events.py
-```
-
-Output:
-
-```text
-01_Dataset/events/ide_events.csv
-```
-
-Example event fields include:
-
-```text
-event_id
-timestamp
-developer_id
-activity_type
-language
-duration_seconds
-```
-
----
-
-## 7. Jira Event Generation
-
-Jira project-management events were generated to represent issue-related developer activity.
-
-File:
-
-```text
-02_Python/06_generate_jira_events.py
-```
-
-Output:
-
-```text
-01_Dataset/events/jira_events.csv
-```
-
-Example event fields include:
-
-```text
-event_id
-timestamp
-developer_id
-issue_key
-issue_type
-status
-priority
-event_type
-```
-
----
-
-# 🔄 Airflow Pipeline
-
-An Apache Airflow DAG was added for the CogniStream event pipeline.
-
-File:
-
-```text
-03_Airflow/dags/cognistream_event_pipeline.py
-```
-
-The Airflow component is intended to help orchestrate the project data pipeline and automate the processing workflow.
-
----
-
-# 🗄️ ClickHouse
-
-The ClickHouse component is currently under development.
-
-Planned responsibilities include:
-
-* Creating analytical tables.
-* Loading event datasets.
-* Storing processed event data.
-* Running analytical queries.
-* Preparing data for downstream analytics and dashboards.
-
-Current structure:
-
-```text
-04_ClickHouse/
-├── sql/
-│   └── 01_create_tables.sql
-│
-└── scripts/
-    └── 02_load_data.py
-```
-
-Python ClickHouse connectivity has also been prepared using:
-
-```text
-clickhouse-connect
-```
-
----
-
-# 🚧 Upcoming Modules
-
-The following components are planned/in progress:
-
-### 05 – Flow State
-
-Responsible for handling and managing event/data flow state.
-
-### 06 – Backend
-
-Planned backend services and APIs for processing and serving project data.
-
-### 07 – Frontend
-
-Planned user interface for interacting with the CogniStream system.
-
-### 08 – Dashboard
-
-Planned analytics dashboard for visualizing developer productivity and event-based insights.
-
----
-
-# 🛠️ Technologies
-
-The project currently uses or is planned to use:
-
-* **Python**
-* **Pandas**
-* **NumPy**
-* **Apache Airflow**
-* **ClickHouse**
-* **SQL**
-* **Git**
-* **GitHub**
-* **Docker**
-* **Frontend technologies**
-* **Backend technologies**
-* **Data visualization / Dashboard tools**
-
----
-
-# 📊 Data Sources
-
-CogniStream currently works with simulated/structured event data representing:
-
-| Source | Event Type                            |
-| ------ | ------------------------------------- |
-| GitHub | Developer repository/activity events  |
-| Slack  | Communication and notification events |
-| IDE    | Coding and development activity       |
-| Jira   | Issue and project-management events   |
-
----
-
-# 🔁 Data Pipeline
-
-The overall planned workflow is:
-
-```text
-Raw Productivity Data
-        │
-        ▼
-Data Exploration
-        │
-        ▼
-Data Cleaning
-        │
-        ▼
-Event Generation
-        │
-        ├── GitHub Events
-        ├── Slack Events
-        ├── IDE Events
-        └── Jira Events
-        │
-        ▼
+Python
+Pandas
 Apache Airflow
-        │
-        ▼
 ClickHouse
-        │
-        ▼
+FastAPI
+React
+Vite
+Axios
+SQL
+GitHub
+
+Project Structure
+
+01_Dataset
+
+Contains the event datasets and generated developer activity data.
+
+02_Python
+
+Contains Python scripts for dataset exploration, cleaning, and event generation.
+
+03_Airflow
+
+Contains the Apache Airflow DAG used to automate the event processing and ClickHouse loading pipeline.
+
+04_ClickHouse
+
+Contains ClickHouse database schema, analytical views, and SQL queries.
+
+05_Flow_State
+
+Contains the Flow State Engine used to calculate developer metrics, flow scores, and flow states.
+
+06_Backend
+
+Contains the FastAPI backend and REST API implementation.
+
+07_Frontend
+
+Contains the React and Vite dashboard used to visualize project analytics.
+
+08_Screenshots
+
+Contains screenshots of the completed pipeline, database, Flow State Engine, API, and dashboard.
+
+Python Files
+
+01_dataset_exploration.py
+02_data_cleaning.py
+03_generate_github_events.py
+04_generate_slack_events.py
+05_generate_ide_events.py
+06_generate_jira_events.py
+
+Data Generation
+
+500 Developers
+5,000 GitHub Events
+5,000 Slack Events
+5,000 Jira Events
+10,000 IDE Events
+25,000 Total Events
+
+Airflow
+
+DAG Name
+
+cognistream_event_pipeline.py
+
+Airflow Workflow
+
+Check event files.
+Process GitHub events.
+Process Slack events.
+Process Jira events.
+Process IDE events.
+Load processed event data into ClickHouse.
+Send success notification.
+
+ClickHouse
+
+Purpose
+
+ClickHouse is used as the analytical database for storing developer event data and processed flow-state results.
+
+Data Sources
+
+GitHub Events
+Slack Events
+Jira Events
+IDE Events
+
+Analytical Views
+
+developer_flow_summary
+context_switch_summary
+
+SQL Analysis
+
+Flow State Analysis
+Interruption Analysis
+Context Switch Analysis
+Top Developer Analysis
+
+Flow State Engine
+
+Purpose
+
+The Flow State Engine processes developer activity data and calculates developer metrics, flow scores, and flow states.
+
+Folder Structure
+
+classifier.py
+config.py
+flow_state_engine.py
+metrics.py
+scoring.py
+storage.py
+
+Flow State Workflow
+
+Connect to ClickHouse.
+Load GitHub, Slack, Jira, and IDE event data.
+Calculate developer-level metrics.
+Calculate flow scores.
+Classify developers into flow states.
+Store the calculated results in ClickHouse.
+
+Flow States
+
+Deep Flow
+Focused
+Neutral
+Distracted
+Burnout Risk
+
+Flow State Results
+
+500 Developer Flow States Generated
+Average Flow Score: 50.16
+Minimum Flow Score: 25.50
+Maximum Flow Score: 69.39
+Neutral: 140 Developers
+Distracted: 313 Developers
+Burnout Risk: 47 Developers
+Deep Flow: 0 Developers
+Focused: 0 Developers
+
 Backend
-        │
-        ▼
+
+Purpose
+
+The FastAPI backend provides REST APIs for accessing developer flow state, summary, context switching, and coding activity data.
+
+Folder Structure
+
+database.py
+main.py
+routers.py
+schemas.py
+
+API Endpoints
+
+GET /
+GET /health
+GET /developers
+GET /summary
+GET /developer/{developer_id}
+GET /context-switch
+GET /flow-summary
+
+Backend Features
+
+Developer Flow State API
+Flow Score API
+Flow Summary API
+Context Switching API
+Coding Activity API
+Developer Details API
+ClickHouse Integration
+
 Frontend
-        │
-        ▼
-Dashboard
-```
 
----
+Purpose
 
-# 📁 Current Development Status
+The React frontend provides an interactive dashboard for visualizing developer flow state analytics.
 
-| Module          | Status                             |
-| --------------- | ---------------------------------- |
-| 01 – Dataset    | ✅ Completed                        |
-| 02 – Python     | ✅ Completed                        |
-| 03 – Airflow    | ✅ Initial implementation completed |
-| 04 – ClickHouse | 🔄 In Progress                     |
-| 05 – Flow State | ⏳ Upcoming                         |
-| 06 – Backend    | ⏳ Upcoming                         |
-| 07 – Frontend   | ⏳ Upcoming                         |
-| 08 – Dashboard  | ⏳ Upcoming                         |
+Technologies
 
----
+React
+Vite
+Axios
 
-# 💻 Environment Setup
+Dashboard Features
 
-A Python virtual environment is used for the project.
+Total Developers
+Average Flow Score
+Flow State Distribution
+Developer Flow State Table
+Context Switching Analysis
+Coding Activity Analysis
+Developer Summary
+Top Flow Scores
+Total Notifications
+Total Coding Time
+Total Sessions
+Interactive Dashboard Views
 
-```text
-.venv/
-```
+Project Statistics
 
-The following ClickHouse Python connector has been installed:
+Total Developers: 500
+Total Events: 25,000
+GitHub Events: 5,000
+Slack Events: 5,000
+Jira Events: 5,000
+IDE Events: 10,000
+Developer Flow States: 500
+Total Sessions: 10,000
+Total Notifications: 5,000
+Total Coding Time: Approximately 2,550 Hours
 
-```text
-clickhouse-connect
-```
+Screenshots
 
-The virtual environment and other local development files are excluded from version control where appropriate through `.gitignore`.
+The 08_Screenshots folder contains screenshots of the completed CogniStream project.
 
----
+Screenshot Files
 
-# 🚀 Future Goal
+airflow_pipeline.png
+clickhouse_data.png
+cognistream_dashboard1.png
+cognistream_dashboard2.png
+cognistream_dashboard3.png
+fastapi_swagger.png
+flow_score_summary.png
+flow_state_events.png
+flow_state_output.png
+flow_state_output1.png
 
-The final goal of CogniStream is to build an end-to-end developer productivity analytics platform that can:
+End-to-End Project Workflow
 
-1. Collect developer activity data.
-2. Generate and process event streams.
-3. Orchestrate data processing workflows.
-4. Store analytical data efficiently.
-5. Process and serve data through a backend.
-6. Provide a frontend interface.
-7. Visualize productivity and activity metrics through dashboards.
+Generate developer activity events using Python.
+Store the generated events in the dataset folder.
+Use Apache Airflow to automate event processing.
+Load the processed events into ClickHouse.
+Calculate developer metrics using the Flow State Engine.
+Calculate flow scores and classify developer flow states.
+Store the results in ClickHouse.
+Expose analytics through FastAPI REST APIs.
+Connect the React frontend with the FastAPI backend.
+Visualize developer flow state and activity analytics through the dashboard.
 
----
+Week 1
 
-# 👩‍💻 Project Status
+Project setup
+Dataset preparation
+Python development
+Event data generation
+Initial data processing
+GitHub repository setup
 
-**Project:** Project 2 – CogniStream
+Week 2
 
-**Current Phase:** Data Pipeline & ClickHouse Development
+Apache Airflow setup
+Airflow DAG development
+Event file validation
+Event processing workflow
+ClickHouse integration
+Database and table setup
 
-**Branch:** `sahla-sharin`
+Week 3
 
-**Repository:** `Project_2_CogniStream`
+ClickHouse event loading
+Analytical views
+SQL analysis
+Flow State Engine development
+Developer metric calculation
+Flow score calculation
+Flow state classification
+ClickHouse result storage
 
-The project is being developed incrementally, with each module being implemented and committed as development progresses.
+Week 4
+
+Scaled dataset to 500 developers and 25,000 events.
+Completed Flow State Engine execution.
+Developed FastAPI backend APIs.
+Connected React frontend with the backend.
+Developed the CogniStream analytics dashboard.
+Added developer flow state, flow score, context switching, and coding activity analysis.
+Added dashboard statistics and visualizations.
+Added project screenshots.
+Updated documentation and GitHub repository.
+
+Project Outcome
+
+The CogniStream project successfully implements an end-to-end Developer Flow State Analytics pipeline. The project processes 25,000 developer activity events from GitHub, Slack, Jira, and IDE sources for 500 developers. Apache Airflow automates the data pipeline, ClickHouse provides analytical data storage, the Flow State Engine calculates developer flow metrics and states, FastAPI provides REST APIs, and the React dashboard presents the final analytics in an interactive format.
