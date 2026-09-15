@@ -63,9 +63,19 @@ def get_summary():
     FROM cognistream.developer_flow_state
     """
 
-    summary = client.query(query).named_results()[0]
+    # named_results() returns a generator,
+    # so convert it to a list before accessing the first row.
+    result = list(client.query(query).named_results())
 
-    return summary
+    row = result[0]
+
+    return {
+        "total_developers": int(row["total_developers"]),
+        "deep_flow": int(row["deep_flow"]),
+        "focused": int(row["focused"]),
+        "neutral": int(row["neutral"]),
+        "distracted": int(row["distracted"]),
+    }
 
 
 # ---------------------------------------------------------
@@ -89,14 +99,19 @@ def get_developer(developer_id: str):
     WHERE developer_id = {developer_id:String}
     """
 
-    result = client.query(
-        query,
-        parameters={
-            "developer_id": developer_id
-        },
-    ).named_results()
+    # Convert generator to list because we need
+    # to check its length and access the first row.
+    result = list(
+        client.query(
+            query,
+            parameters={
+                "developer_id": developer_id
+            },
+        ).named_results()
+    )
 
     if len(result) == 0:
+
         raise HTTPException(
             status_code=404,
             detail="Developer not found",
